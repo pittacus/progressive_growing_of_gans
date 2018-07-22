@@ -67,7 +67,7 @@ def process_reals(x, lod, mirror_augment, drange_data, drange_net):
         with tf.name_scope('FadeLOD'): # Smooth crossfade between consecutive levels-of-detail.
             s = tf.shape(x)
             y = tf.reshape(x, [-1, s[1], s[2]//2, 2, s[3]//2, 2])
-            y = tf.reduce_mean(y, axis=[3, 5], keepdims=True)
+            y = tf.reduce_mean(y, axis=[3, 5], keep_dims=True)
             y = tf.tile(y, [1, 1, 1, 2, 1, 2])
             y = tf.reshape(y, [-1, s[1], s[2], s[3]])
             x = tfutil.lerp(x, y, lod - tf.floor(lod))

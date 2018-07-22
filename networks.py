@@ -119,7 +119,7 @@ def conv2d_downscale2d(x, fmaps, kernel, gain=np.sqrt(2), use_wscale=False):
 
 def pixel_norm(x, epsilon=1e-8):
     with tf.variable_scope('PixelNorm'):
-        return x * tf.rsqrt(tf.reduce_mean(tf.square(x), axis=1, keepdims=True) + epsilon)
+        return x * tf.rsqrt(tf.reduce_mean(tf.square(x), axis=1, keep_dims=True) + epsilon)
 
 #----------------------------------------------------------------------------
 # Minibatch standard deviation.
@@ -130,10 +130,10 @@ def minibatch_stddev_layer(x, group_size=4):
         s = x.shape                                             # [NCHW]  Input shape.
         y = tf.reshape(x, [group_size, -1, s[1], s[2], s[3]])   # [GMCHW] Split minibatch into M groups of size G.
         y = tf.cast(y, tf.float32)                              # [GMCHW] Cast to FP32.
-        y -= tf.reduce_mean(y, axis=0, keepdims=True)           # [GMCHW] Subtract mean over group.
+        y -= tf.reduce_mean(y, axis=0, keep_dims=True)           # [GMCHW] Subtract mean over group.
         y = tf.reduce_mean(tf.square(y), axis=0)                # [MCHW]  Calc variance over group.
         y = tf.sqrt(y + 1e-8)                                   # [MCHW]  Calc stddev over group.
-        y = tf.reduce_mean(y, axis=[1,2,3], keepdims=True)      # [M111]  Take average over fmaps and pixels.
+        y = tf.reduce_mean(y, axis=[1,2,3], keep_dims=True)      # [M111]  Take average over fmaps and pixels.
         y = tf.cast(y, x.dtype)                                 # [M111]  Cast back to original data type.
         y = tf.tile(y, [group_size, 1, s[2], s[3]])             # [N1HW]  Replicate over group and pixels.
         return tf.concat([x, y], axis=1)                        # [NCHW]  Append as new fmap.
