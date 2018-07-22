@@ -373,7 +373,11 @@ class Optimizer:
 
     # Reset internal state of the underlying optimizer.
     def reset_optimizer_state(self):
-        run([var.initializer for opt in self._dev_opt.values() for var in opt.variables()])
+        # run([var.initializer for opt in self._dev_opt.values() for var in opt.variables()])
+
+        # tf 1.4.1 do no support variables method, use following two lines to get the same thing done
+        run([var.initializer for opt in self._dev_opt.values() for var in tf.global_variables() if opt.get_name() in var.name])
+        run([var.initializer for opt in self._dev_opt.values() for var in opt._get_beta_accumulators()])
 
     # Get or create variable representing log2 of the current dynamic loss scaling factor.
     def get_loss_scaling_var(self, device):
