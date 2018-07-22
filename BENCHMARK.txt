@@ -1,0 +1,153 @@
+Saving results to results/006-pgan-mnist-preset-v2-4gpus-fp32
+Training...
+tick 1     kimg 161.8    lod 3.00  minibatch 512  time 44s          sec/tick 44.3    sec/kimg 0.27    maintenance 63.2
+tick 2     kimg 323.6    lod 3.00  minibatch 512  time 1m 37s       sec/tick 31.0    sec/kimg 0.19    maintenance 21.7
+tick 3     kimg 485.4    lod 3.00  minibatch 512  time 2m 08s       sec/tick 31.0    sec/kimg 0.19    maintenance 0.1
+tick 4     kimg 625.7    lod 2.96  minibatch 256  time 3m 00s       sec/tick 52.0    sec/kimg 0.37    maintenance 0.1
+tick 5     kimg 766.0    lod 2.73  minibatch 256  time 5m 05s       sec/tick 124.7   sec/kimg 0.89    maintenance 0.3
+tick 6     kimg 906.2    lod 2.49  minibatch 256  time 7m 10s       sec/tick 124.7   sec/kimg 0.89    maintenance 0.3
+tick 7     kimg 1046.5   lod 2.26  minibatch 256  time 9m 15s       sec/tick 124.7   sec/kimg 0.89    maintenance 0.3
+tick 8     kimg 1186.8   lod 2.02  minibatch 256  time 11m 21s      sec/tick 125.1   sec/kimg 0.89    maintenance 0.3
+tick 9     kimg 1327.1   lod 2.00  minibatch 256  time 13m 24s      sec/tick 123.5   sec/kimg 0.88    maintenance 0.3
+tick 10    kimg 1467.4   lod 2.00  minibatch 256  time 15m 28s      sec/tick 123.5   sec/kimg 0.88    maintenance 0.3
+tick 11    kimg 1607.7   lod 2.00  minibatch 256  time 17m 33s      sec/tick 123.3   sec/kimg 0.88    maintenance 1.9
+tick 12    kimg 1748.0   lod 2.00  minibatch 256  time 19m 37s      sec/tick 123.4   sec/kimg 0.88    maintenance 0.3
+tick 13    kimg 1868.3   lod 1.89  minibatch 128  time 24m 08s      sec/tick 270.3   sec/kimg 2.25    maintenance 0.3
+tick 14    kimg 1988.6   lod 1.69  minibatch 128  time 30m 07s      sec/tick 358.1   sec/kimg 2.98    maintenance 1.2
+tick 15    kimg 2108.9   lod 1.49  minibatch 128  time 36m 06s      sec/tick 358.4   sec/kimg 2.98    maintenance 0.7
+tick 16    kimg 2229.2   lod 1.29  minibatch 128  time 42m 05s      sec/tick 358.7   sec/kimg 2.98    maintenance 0.7
+tick 17    kimg 2349.6   lod 1.08  minibatch 128  time 48m 05s      sec/tick 358.6   sec/kimg 2.98    maintenance 0.7
+tick 18    kimg 2469.9   lod 1.00  minibatch 128  time 54m 02s      sec/tick 356.5   sec/kimg 2.96    maintenance 0.7
+tick 19    kimg 2590.2   lod 1.00  minibatch 128  time 59m 58s      sec/tick 354.8   sec/kimg 2.95    maintenance 0.7
+tick 20    kimg 2710.5   lod 1.00  minibatch 128  time 1h 05m 53s   sec/tick 355.1   sec/kimg 2.95    maintenance 0.7
+tick 21    kimg 2830.8   lod 1.00  minibatch 128  time 1h 11m 49s   sec/tick 354.8   sec/kimg 2.95    maintenance 1.2
+tick 22    kimg 2951.2   lod 1.00  minibatch 128  time 1h 17m 45s   sec/tick 354.6   sec/kimg 2.95    maintenance 0.7
+tick 23    kimg 3051.3   lod 0.91  minibatch 64   time 1h 28m 22s   sec/tick 636.8   sec/kimg 6.36    maintenance 0.7
+tick 24    kimg 3151.4   lod 0.75  minibatch 64   time 1h 44m 18s   sec/tick 953.2   sec/kimg 9.52    maintenance 2.3
+tick 25    kimg 3251.5   lod 0.58  minibatch 64   time 2h 00m 09s   sec/tick 949.6   sec/kimg 9.49    maintenance 2.3
+tick 26    kimg 3351.6   lod 0.41  minibatch 64   time 2h 16m 01s   sec/tick 949.7   sec/kimg 9.49    maintenance 2.2
+tick 27    kimg 3451.6   lod 0.25  minibatch 64   time 2h 31m 53s   sec/tick 949.1   sec/kimg 9.48    maintenance 2.3
+tick 28    kimg 3551.7   lod 0.08  minibatch 64   time 2h 47m 45s   sec/tick 950.3   sec/kimg 9.49    maintenance 2.3
+tick 29    kimg 3651.8   lod 0.00  minibatch 64   time 3h 03m 34s   sec/tick 946.4   sec/kimg 9.46    maintenance 2.2
+tick 30    kimg 3751.9   lod 0.00  minibatch 64   time 3h 19m 19s   sec/tick 943.2   sec/kimg 9.42    maintenance 2.2
+tick 31    kimg 3852.0   lod 0.00  minibatch 64   time 3h 35m 11s   sec/tick 948.8   sec/kimg 9.48    maintenance 2.7
+
+Saving results to results/007-pgan-mnist-preset-v2-2gpus-fp32-GRAPH-HIST
+Training...
+tick 1     kimg 160.8    lod 3.00  minibatch 256  time 1m 07s       sec/tick 66.7    sec/kimg 0.41    maintenance 35.8
+tick 2     kimg 321.5    lod 3.00  minibatch 256  time 2m 13s       sec/tick 56.7    sec/kimg 0.35    maintenance 9.5
+tick 3     kimg 482.3    lod 3.00  minibatch 256  time 3m 10s       sec/tick 56.8    sec/kimg 0.35    maintenance 0.4
+tick 4     kimg 622.6    lod 2.96  minibatch 256  time 4m 27s       sec/tick 76.2    sec/kimg 0.54    maintenance 0.4
+tick 5     kimg 762.9    lod 2.73  minibatch 256  time 7m 21s       sec/tick 173.7   sec/kimg 1.24    maintenance 0.6
+tick 6     kimg 903.2    lod 2.50  minibatch 256  time 10m 16s      sec/tick 173.9   sec/kimg 1.24    maintenance 0.6
+tick 7     kimg 1043.5   lod 2.26  minibatch 256  time 13m 10s      sec/tick 173.9   sec/kimg 1.24    maintenance 0.6
+tick 8     kimg 1183.7   lod 2.03  minibatch 256  time 16m 05s      sec/tick 174.1   sec/kimg 1.24    maintenance 0.6
+tick 9     kimg 1324.0   lod 2.00  minibatch 256  time 18m 57s      sec/tick 171.7   sec/kimg 1.22    maintenance 0.5
+tick 10    kimg 1464.3   lod 2.00  minibatch 256  time 21m 49s      sec/tick 171.3   sec/kimg 1.22    maintenance 0.5
+tick 11    kimg 1604.6   lod 2.00  minibatch 256  time 24m 41s      sec/tick 171.2   sec/kimg 1.22    maintenance 1.4
+tick 12    kimg 1744.9   lod 2.00  minibatch 256  time 27m 32s      sec/tick 169.8   sec/kimg 1.21    maintenance 0.6
+tick 13    kimg 1865.2   lod 1.89  minibatch 128  time 33m 36s      sec/tick 364.0   sec/kimg 3.03    maintenance 0.6
+
+Saving results to results/010-pgan-mnist-preset-v2-1gpu-fp32-GRAPH-HIST
+Training...
+tick 1     kimg 160.3    lod 3.00  minibatch 128  time 1m 30s       sec/tick 90.1    sec/kimg 0.56    maintenance 23.3
+tick 2     kimg 320.5    lod 3.00  minibatch 128  time 3m 00s       sec/tick 84.1    sec/kimg 0.52    maintenance 6.0
+tick 3     kimg 480.8    lod 3.00  minibatch 128  time 4m 25s       sec/tick 84.2    sec/kimg 0.53    maintenance 0.5
+tick 4     kimg 621.1    lod 2.97  minibatch 128  time 6m 23s       sec/tick 117.7   sec/kimg 0.84    maintenance 0.4
+tick 5     kimg 761.3    lod 2.73  minibatch 128  time 11m 34s      sec/tick 310.5   sec/kimg 2.21    maintenance 0.5
+tick 6     kimg 901.6    lod 2.50  minibatch 128  time 16m 46s      sec/tick 311.5   sec/kimg 2.22    maintenance 0.6
+tick 7     kimg 1041.9   lod 2.26  minibatch 128  time 21m 59s      sec/tick 311.9   sec/kimg 2.22    maintenance 0.6
+
+Saving results to results/013-pgan-oct64-preset-v2-2gpus-fp32-GRAPH-HIST
+Training...
+tick 1     kimg 160.8    lod 4.00  minibatch 256  time 1m 08s       sec/tick 67.5    sec/kimg 0.42    maintenance 42.9
+tick 2     kimg 321.5    lod 4.00  minibatch 256  time 2m 18s       sec/tick 59.3    sec/kimg 0.37    maintenance 11.3
+tick 3     kimg 482.3    lod 4.00  minibatch 256  time 3m 17s       sec/tick 58.8    sec/kimg 0.37    maintenance 0.4
+tick 4     kimg 622.6    lod 3.96  minibatch 256  time 4m 30s       sec/tick 72.5    sec/kimg 0.52    maintenance 0.5
+tick 5     kimg 762.9    lod 3.73  minibatch 256  time 7m 27s       sec/tick 176.4   sec/kimg 1.26    maintenance 0.5
+tick 6     kimg 903.2    lod 3.50  minibatch 256  time 10m 25s      sec/tick 176.7   sec/kimg 1.26    maintenance 0.5
+tick 7     kimg 1043.5   lod 3.26  minibatch 256  time 13m 22s      sec/tick 176.7   sec/kimg 1.26    maintenance 0.5
+tick 8     kimg 1183.7   lod 3.03  minibatch 256  time 16m 19s      sec/tick 176.8   sec/kimg 1.26    maintenance 0.5
+tick 9     kimg 1324.0   lod 3.00  minibatch 256  time 19m 15s      sec/tick 175.4   sec/kimg 1.25    maintenance 0.5
+tick 10    kimg 1464.3   lod 3.00  minibatch 256  time 22m 10s      sec/tick 174.5   sec/kimg 1.24    maintenance 0.5
+tick 11    kimg 1604.6   lod 3.00  minibatch 256  time 25m 06s      sec/tick 174.5   sec/kimg 1.24    maintenance 1.7
+tick 12    kimg 1744.9   lod 3.00  minibatch 256  time 28m 01s      sec/tick 174.4   sec/kimg 1.24    maintenance 0.5
+tick 13    kimg 1865.2   lod 2.89  minibatch 128  time 33m 58s      sec/tick 356.1   sec/kimg 2.96    maintenance 0.5
+tick 14    kimg 1985.5   lod 2.69  minibatch 128  time 42m 41s      sec/tick 522.9   sec/kimg 4.35    maintenance 0.8
+tick 15    kimg 2105.9   lod 2.49  minibatch 128  time 51m 24s      sec/tick 521.7   sec/kimg 4.34    maintenance 0.7
+tick 16    kimg 2226.2   lod 2.29  minibatch 128  time 1h 00m 06s   sec/tick 521.7   sec/kimg 4.34    maintenance 0.7
+tick 17    kimg 2346.5   lod 2.09  minibatch 128  time 1h 08m 51s   sec/tick 524.5   sec/kimg 4.36    maintenance 0.7
+tick 18    kimg 2466.8   lod 2.00  minibatch 128  time 1h 17m 34s   sec/tick 521.8   sec/kimg 4.34    maintenance 0.7
+tick 19    kimg 2587.1   lod 2.00  minibatch 128  time 1h 26m 10s   sec/tick 515.8   sec/kimg 4.29    maintenance 0.7
+tick 20    kimg 2707.5   lod 2.00  minibatch 128  time 1h 34m 47s   sec/tick 515.9   sec/kimg 4.29    maintenance 0.7
+tick 21    kimg 2827.8   lod 2.00  minibatch 128  time 1h 43m 24s   sec/tick 516.0   sec/kimg 4.29    maintenance 1.1
+tick 22    kimg 2948.1   lod 2.00  minibatch 128  time 1h 52m 01s   sec/tick 516.0   sec/kimg 4.29    maintenance 0.7
+tick 23    kimg 3048.2   lod 1.92  minibatch 64   time 2h 07m 51s   sec/tick 949.3   sec/kimg 9.48    maintenance 0.7
+tick 24    kimg 3148.3   lod 1.75  minibatch 64   time 2h 32m 56s   sec/tick 1504.1  sec/kimg 15.03   maintenance 1.4
+tick 25    kimg 3248.4   lod 1.59  minibatch 64   time 2h 58m 04s   sec/tick 1505.9  sec/kimg 15.04   maintenance 1.4
+tick 26    kimg 3348.5   lod 1.42  minibatch 64   time 3h 23m 12s   sec/tick 1506.8  sec/kimg 15.05   maintenance 1.4
+tick 27    kimg 3448.6   lod 1.25  minibatch 64   time 3h 48m 18s   sec/tick 1505.0  sec/kimg 15.04   maintenance 1.4
+tick 28    kimg 3548.7   lod 1.09  minibatch 64   time 4h 13m 21s   sec/tick 1501.8  sec/kimg 15.00   maintenance 1.4
+tick 29    kimg 3648.8   lod 1.00  minibatch 64   time 4h 38m 13s   sec/tick 1490.1  sec/kimg 14.89   maintenance 1.4
+tick 30    kimg 3748.9   lod 1.00  minibatch 64   time 5h 02m 50s   sec/tick 1475.4  sec/kimg 14.74   maintenance 1.4
+tick 31    kimg 3849.0   lod 1.00  minibatch 64   time 5h 27m 29s   sec/tick 1477.4  sec/kimg 14.76   maintenance 1.8
+tick 32    kimg 3949.1   lod 1.00  minibatch 64   time 5h 52m 06s   sec/tick 1475.4  sec/kimg 14.74   maintenance 1.4
+tick 33    kimg 4049.2   lod 1.00  minibatch 64   time 6h 16m 44s   sec/tick 1476.5  sec/kimg 14.75   maintenance 1.4
+tick 34    kimg 4149.2   lod 1.00  minibatch 64   time 6h 41m 22s   sec/tick 1476.8  sec/kimg 14.75   maintenance 1.4
+tick 35    kimg 4229.2   lod 0.95  minibatch 32   time 7h 10m 24s   sec/tick 1741.2  sec/kimg 21.76   maintenance 1.4
+tick 36    kimg 4309.2   lod 0.82  minibatch 32   time 7h 55m 41s   sec/tick 2714.2  sec/kimg 33.93   maintenance 2.5
+tick 37    kimg 4389.2   lod 0.68  minibatch 32   time 8h 40m 55s   sec/tick 2711.5  sec/kimg 33.89   maintenance 2.5
+tick 38    kimg 4469.2   lod 0.55  minibatch 32   time 9h 26m 08s   sec/tick 2710.5  sec/kimg 33.88   maintenance 2.6
+tick 39    kimg 4549.2   lod 0.42  minibatch 32   time 10h 11m 29s  sec/tick 2718.5  sec/kimg 33.98   maintenance 2.6
+tick 40    kimg 4629.2   lod 0.28  minibatch 32   time 10h 56m 53s  sec/tick 2720.8  sec/kimg 34.01   maintenance 2.5
+tick 41    kimg 4709.2   lod 0.15  minibatch 32   time 11h 42m 10s  sec/tick 2713.9  sec/kimg 33.92   maintenance 3.0
+tick 42    kimg 4789.2   lod 0.02  minibatch 32   time 12h 27m 26s  sec/tick 2714.0  sec/kimg 33.93   maintenance 2.6
+tick 43    kimg 4869.2   lod 0.00  minibatch 32   time 13h 11m 45s  sec/tick 2656.6  sec/kimg 33.21   maintenance 2.5
+tick 44    kimg 4949.2   lod 0.00  minibatch 32   time 13h 56m 26s  sec/tick 2678.3  sec/kimg 33.48   maintenance 2.5
+
+Saving results to results/014-pgan-oct256-preset-v2-2gpus-fp32-GRAPH-HIST
+Training...
+tick 1     kimg 160.8    lod 6.00  minibatch 256  time 1m 16s       sec/tick 76.0    sec/kimg 0.47    maintenance 65.8
+tick 2     kimg 321.5    lod 6.00  minibatch 256  time 2m 41s       sec/tick 66.5    sec/kimg 0.41    maintenance 18.5
+tick 3     kimg 482.3    lod 6.00  minibatch 256  time 3m 48s       sec/tick 66.7    sec/kimg 0.41    maintenance 0.4
+tick 4     kimg 622.6    lod 5.96  minibatch 256  time 5m 08s       sec/tick 79.7    sec/kimg 0.57    maintenance 0.4
+tick 5     kimg 762.9    lod 5.73  minibatch 256  time 8m 13s       sec/tick 184.0   sec/kimg 1.31    maintenance 0.4
+tick 6     kimg 903.2    lod 5.50  minibatch 256  time 11m 19s      sec/tick 185.8   sec/kimg 1.32    maintenance 0.4
+tick 7     kimg 1043.5   lod 5.26  minibatch 256  time 14m 25s      sec/tick 186.1   sec/kimg 1.33    maintenance 0.4
+tick 8     kimg 1183.7   lod 5.03  minibatch 256  time 17m 32s      sec/tick 186.5   sec/kimg 1.33    maintenance 0.4
+tick 9     kimg 1324.0   lod 5.00  minibatch 256  time 20m 36s      sec/tick 182.9   sec/kimg 1.30    maintenance 0.4
+tick 10    kimg 1464.3   lod 5.00  minibatch 256  time 23m 38s      sec/tick 181.7   sec/kimg 1.30    maintenance 0.4
+tick 11    kimg 1604.6   lod 5.00  minibatch 256  time 26m 40s      sec/tick 180.6   sec/kimg 1.29    maintenance 2.1
+tick 12    kimg 1744.9   lod 5.00  minibatch 256  time 29m 42s      sec/tick 180.9   sec/kimg 1.29    maintenance 0.4
+tick 13    kimg 1865.2   lod 4.89  minibatch 128  time 35m 48s      sec/tick 366.3   sec/kimg 3.04    maintenance 0.4
+tick 14    kimg 1985.5   lod 4.69  minibatch 128  time 44m 45s      sec/tick 536.0   sec/kimg 4.45    maintenance 0.5
+tick 15    kimg 2105.9   lod 4.49  minibatch 128  time 53m 44s      sec/tick 539.0   sec/kimg 4.48    maintenance 0.5
+tick 16    kimg 2226.2   lod 4.29  minibatch 128  time 1h 02m 43s   sec/tick 538.4   sec/kimg 4.48    maintenance 0.5
+tick 17    kimg 2346.5   lod 4.09  minibatch 128  time 1h 11m 42s   sec/tick 538.4   sec/kimg 4.47    maintenance 0.5
+tick 18    kimg 2466.8   lod 4.00  minibatch 128  time 1h 20m 34s   sec/tick 531.4   sec/kimg 4.42    maintenance 0.4
+tick 19    kimg 2587.1   lod 4.00  minibatch 128  time 1h 29m 22s   sec/tick 527.7   sec/kimg 4.39    maintenance 0.4
+tick 20    kimg 2707.5   lod 4.00  minibatch 128  time 1h 38m 11s   sec/tick 528.3   sec/kimg 4.39    maintenance 0.5
+tick 21    kimg 2827.8   lod 4.00  minibatch 128  time 1h 46m 59s   sec/tick 527.5   sec/kimg 4.38    maintenance 0.9
+tick 22    kimg 2948.1   lod 4.00  minibatch 128  time 1h 55m 47s   sec/tick 526.8   sec/kimg 4.38    maintenance 0.4
+tick 23    kimg 3048.2   lod 3.92  minibatch 64   time 2h 11m 50s   sec/tick 963.1   sec/kimg 9.62    maintenance 0.4
+tick 24    kimg 3148.3   lod 3.75  minibatch 64   time 2h 37m 10s   sec/tick 1519.2  sec/kimg 15.18   maintenance 0.6
+tick 25    kimg 3248.4   lod 3.59  minibatch 64   time 3h 02m 31s   sec/tick 1521.1  sec/kimg 15.20   maintenance 0.5
+tick 26    kimg 3348.5   lod 3.42  minibatch 64   time 3h 27m 51s   sec/tick 1518.6  sec/kimg 15.17   maintenance 0.5
+tick 27    kimg 3448.6   lod 3.25  minibatch 64   time 3h 52m 56s   sec/tick 1504.6  sec/kimg 15.03   maintenance 0.5
+tick 28    kimg 3548.7   lod 3.09  minibatch 64   time 4h 17m 59s   sec/tick 1502.9  sec/kimg 15.02   maintenance 0.5
+tick 29    kimg 3648.8   lod 3.00  minibatch 64   time 4h 42m 51s   sec/tick 1491.3  sec/kimg 14.90   maintenance 0.5
+tick 30    kimg 3748.9   lod 3.00  minibatch 64   time 5h 07m 26s   sec/tick 1474.8  sec/kimg 14.73   maintenance 0.5
+tick 31    kimg 3849.0   lod 3.00  minibatch 64   time 5h 32m 04s   sec/tick 1476.5  sec/kimg 14.75   maintenance 1.0
+tick 32    kimg 3949.1   lod 3.00  minibatch 64   time 5h 56m 42s   sec/tick 1478.2  sec/kimg 14.77   maintenance 0.5
+tick 33    kimg 4049.2   lod 3.00  minibatch 64   time 6h 21m 27s   sec/tick 1483.9  sec/kimg 14.83   maintenance 0.5
+tick 34    kimg 4149.2   lod 3.00  minibatch 64   time 6h 46m 08s   sec/tick 1481.1  sec/kimg 14.80   maintenance 0.5
+tick 35    kimg 4229.2   lod 2.95  minibatch 32   time 7h 15m 31s   sec/tick 1762.2  sec/kimg 22.03   maintenance 0.5
+tick 36    kimg 4309.2   lod 2.82  minibatch 32   time 8h 01m 40s   sec/tick 2768.1  sec/kimg 34.60   maintenance 0.7
+tick 37    kimg 4389.2   lod 2.68  minibatch 32   time 8h 47m 52s   sec/tick 2771.6  sec/kimg 34.64   maintenance 0.6
+tick 38    kimg 4469.2   lod 2.55  minibatch 32   time 9h 34m 09s   sec/tick 2777.0  sec/kimg 34.71   maintenance 0.6
+tick 39    kimg 4549.2   lod 2.42  minibatch 32   time 10h 20m 11s  sec/tick 2761.1  sec/kimg 34.51   maintenance 0.5
+tick 40    kimg 4629.2   lod 2.28  minibatch 32   time 11h 06m 14s  sec/tick 2762.1  sec/kimg 34.53   maintenance 0.6
+tick 41    kimg 4709.2   lod 2.15  minibatch 32   time 11h 52m 19s  sec/tick 2764.5  sec/kimg 34.56   maintenance 1.0
+tick 42    kimg 4789.2   lod 2.02  minibatch 32   time 12h 38m 22s  sec/tick 2762.0  sec/kimg 34.52   maintenance 0.6
+tick 43    kimg 4869.2   lod 2.00  minibatch 32   time 13h 23m 24s  sec/tick 2701.1  sec/kimg 33.76   maintenance 0.5
+tick 44    kimg 4949.2   lod 2.00  minibatch 32   time 14h 08m 16s  sec/tick 2692.2  sec/kimg 33.65   maintenance 0.6
