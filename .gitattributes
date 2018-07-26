@@ -1,2 +1,4 @@
 datasets/ filter=lfs diff=lfs merge=lfs -text
 results/ filter=lfs diff=lfs merge=lfs -text
+karras2018iclr-celebahq-1024x1024.pkl filter=lfs diff=lfs merge=lfs -text
+oct2014-network-snapshot-006012.pkl filter=lfs diff=lfs merge=lfs -text
