@@ -435,6 +435,7 @@ def create_lsun(tfrecord_dir, lmdb_dir, resolution=256, max_images=None):
 def create_celeba(tfrecord_dir, celeba_dir, cx=89, cy=121):
     print('Loading CelebA from "%s"' % celeba_dir)
     glob_pattern = os.path.join(celeba_dir, 'img_align_celeba_png', '*.png')
+    glob_pattern = os.path.join(celeba_dir, 'img_align_celeba', '*.jpg') #lifei
     image_filenames = sorted(glob.glob(glob_pattern))
     expected_images = 202599
     if len(image_filenames) != expected_images:
@@ -666,10 +667,10 @@ def create_pap(tfrecord_dir, image_dir, resolution=1024):
     
 def create_from_images(tfrecord_dir, image_dir, shuffle):
     print('Loading images from "%s"' % image_dir)
-    image_filenames = sorted(glob.glob(os.path.join(image_dir, '**/*')))
+    image_filenames = [img for img in sorted(glob.glob(os.path.join(image_dir, '**/*.*'), recursive=True)) if os.path.isfile(img) and (img.endswith('JPEG') or img.endswith('png'))]
     if len(image_filenames) == 0:
         error('No input images found')
-        
+    print('image count:', len(image_filenames))
     img = np.asarray(PIL.Image.open(image_filenames[0]))
     resolution = img.shape[0]
     channels = img.shape[2] if img.ndim == 3 else 1
@@ -684,6 +685,9 @@ def create_from_images(tfrecord_dir, image_dir, shuffle):
         order = tfr.choose_shuffled_order() if shuffle else np.arange(len(image_filenames))
         for idx in range(order.size):
             img = np.asarray(PIL.Image.open(image_filenames[order[idx]]))
+            img_channels = img.shape[2] if img.ndim == 3 else 1
+            if img_channels!=channels: continue
+            # print(image_filenames[order[idx]], img.shape, channels)
             if channels == 1:
                 img = img[np.newaxis, :, :] # HW => CHW
             else:
