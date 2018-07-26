@@ -142,9 +142,9 @@ def train_progressive_gan(
     network_snapshot_ticks  = 10,           # How often to export network snapshots?
     save_tf_graph           = False,        # Include full TensorFlow computation graph in the tfevents file?
     save_weight_histograms  = False,        # Include weight histograms in the tfevents file?
-    resume_run_id           = None,         # Run ID or network pkl to resume training from, None = start from scratch.
+    resume_run_id           = 15,         # Run ID or network pkl to resume training from, None = start from scratch.
     resume_snapshot         = None,         # Snapshot index to resume training from, None = autodetect.
-    resume_kimg             = 0.0,          # Assumed training progress at the beginning. Affects reporting and training schedule.
+    resume_kimg             = 0.0,          # Assumed training progress at the beginning. Affects reporting and training schedule. 0.0 = autodetect.
     resume_time             = 0.0):         # Assumed wallclock time at the beginning. Affects reporting.
 
     maintenance_start_time = time.time()
@@ -156,6 +156,8 @@ def train_progressive_gan(
             network_pkl = misc.locate_network_pkl(resume_run_id, resume_snapshot)
             print('Loading networks from "%s"...' % network_pkl)
             G, D, Gs = misc.load_pkl(network_pkl)
+            if resume_kimg <= 1e-8:
+                resume_kimg = int(os.path.splitext(os.path.basename(s))[0].split("-")[-1])
         else:
             print('Constructing networks...')
             G = tfutil.Network('G', num_channels=training_set.shape[0], resolution=training_set.shape[1], label_size=training_set.label_size, **config.G)
