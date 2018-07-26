@@ -629,6 +629,40 @@ def create_oct(tfrecord_dir, oct_dir, resolution=1024):
             if idx==0: print("Image final shape:", img.shape)
             tfr.add_image(img)
 
+def create_pap(tfrecord_dir, image_dir, resolution=1024):
+    print('Loading images from "%s"' % image_dir)
+    image_filenames = sorted(glob.glob(os.path.join(image_dir, '**/*')))
+    if len(image_filenames) == 0:
+        error('No input images found')    
+    print("Image count:", len(image_filenames))
+    print("Image resolution:", resolution)
+
+    img = np.asarray(PIL.Image.open(image_filenames[0]))
+    print("Image real shape:", img.shape)
+    img_size = max(img.shape)
+    def next_power_of_2(x):
+        return 1 if x == 0 else int(2**np.ceil(np.log2(x)))
+
+    if resolution != next_power_of_2(resolution):
+        print("wrong value for resolution {}, must be a pow of two, reset to {}".format(resolution, next_power_of_2(img_size)) )
+        resolution = next_power_of_2(img_size)
+
+    shuffle = True
+    with TFRecordExporter(tfrecord_dir, len(image_filenames)) as tfr:
+        order = tfr.choose_shuffled_order() if shuffle else np.arange(len(image_filenames))
+        for idx in range(order.size):
+            fn = image_filenames[order[idx]]
+            img = PIL.Image.open(fn)
+            max_size = (resolution, resolution)
+            img.thumbnail(max_size, PIL.Image.ANTIALIAS)
+            offset = (int((max_size[0] - img.size[0]) / 2), int((max_size[1] - img.size[1]) / 2))
+            back = PIL.Image.new("RGB", max_size, "white")
+            back.paste(img, offset)
+            img = np.asarray(back)
+            img = img.transpose(2, 0, 1) # HWC => CHW
+            if idx==0: print("Image final shape:", img.shape)
+            tfr.add_image(img)
+ 
     
 def create_from_images(tfrecord_dir, image_dir, shuffle):
     print('Loading images from "%s"' % image_dir)
@@ -767,6 +801,10 @@ def execute_cmdline(argv):
     p.add_argument(     'tfrecord_dir',     help='New dataset directory to be created')
     p.add_argument(     'oct_dir',          help='Directory containing OCTdata')
     p.add_argument(     '--resolution',     help='Resize to 256, 512 or 1024 from original oct image (default: 1024)', type=int, default=1024)
+
+    p = add_command(    'create_pap',  'Create dataset for pap.', 'create_pap datasets/pap pap_dataset')
+    p.add_argument(     'tfrecord_dir',     help='New dataset directory to be created')
+    p.add_argument(     'image_dir',          help='Directory containing pap data')
 
     args = parser.parse_args(argv[1:] if len(argv) > 1 else ['-h'])
     func = globals()[args.command]
